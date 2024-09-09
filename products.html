@@ -5,7 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>产品 - 草本茶养生商城</title>
     <style>
-        /* ... 保留之前的样式 ... */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
         .filters {
             display: flex;
             flex-wrap: wrap;
@@ -17,17 +48,32 @@
             border-radius: 5px;
             border: 1px solid #ddd;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
-        nav ul li a {
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 10px 15px;
             text-decoration: none;
-            color: #333;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -35,7 +81,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">返回主页</a></li>
+                <li><a href="index.html">主页</a></li>
                 <li><a href="products.html">产品</a></li>
                 <li><a href="tea-academy.html">茶研院</a></li>
             </ul>
@@ -79,9 +125,38 @@
                 <option value="japan">日本</option>
             </select>
         </div>
-        <!-- ... 保留产品卡片 ... -->
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/green-tea.jpg" alt="绿茶">
+                <div class="product-info">
+                    <h3>清新绿茶</h3>
+                    <p>富含抗氧化物，提神醒脑</p>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/herbal-tea.jpg" alt="花草茶">
+                <div class="product-info">
+                    <h3>舒缓花草茶</h3>
+                    <p>天然草本配方，帮助放松身心</p>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="images/oolong-tea.jpg" alt="乌龙茶">
+                <div class="product-info">
+                    <h3>醇香乌龙茶</h3>
+                    <p>独特口感，促进新陈代谢</p>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- ... 保留 footer ... -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 草本茶养生商城. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
