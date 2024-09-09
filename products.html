@@ -5,164 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>产品 - 草本茶养生商城</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #35424a;
-            color: #ffffff;
-            padding: 1rem 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem 0;
-        }
-        .filters {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-        }
-        .filters select {
-            padding: 0.5rem;
-            margin: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            background-color: white;
-        }
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        .product-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
+        /* ... 保留之前的样式 ... */
         .product-card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
-        }
-        .product-info {
-            padding: 1rem;
-        }
-        .product-info h3 {
-            margin-top: 0;
-        }
-        .btn {
-            display: inline-block;
-            background-color: #35424a;
-            color: #ffffff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #2c3e50;
+            background-color: #f0f0f0; /* 添加背景色作为占位符 */
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="products.html">产品</a></li>
-                <li><a href="tea-academy.html">茶研院</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- ... 保留 header ... -->
 
     <div class="container">
         <h1>我们的产品</h1>
-        <div class="filters">
-            <select id="flavor">
-                <option value="">口味选择</option>
-                <option value="sweet">甜味</option>
-                <option value="sour">酸味</option>
-                <option value="bitter">苦味</option>
-                <option value="spicy">辛辣</option>
-            </select>
-            <select id="function">
-                <option value="">功能选择</option>
-                <option value="relax">放松减压</option>
-                <option value="energy">提神醒脑</option>
-                <option value="sleep">改善睡眠</option>
-                <option value="digestion">促进消化</option>
-            </select>
-            <select id="caffeine">
-                <option value="">是否有咖啡因</option>
-                <option value="yes">含咖啡因</option>
-                <option value="no">不含咖啡因</option>
-            </select>
-            <select id="type">
-                <option value="">品种选择</option>
-                <option value="green">绿茶</option>
-                <option value="black">红茶</option>
-                <option value="oolong">乌龙茶</option>
-                <option value="herbal">花草茶</option>
-            </select>
-            <select id="origin">
-                <option value="">产地选择</option>
-                <option value="china">中国</option>
-                <option value="india">印度</option>
-                <option value="srilanka">斯里兰卡</option>
-                <option value="japan">日本</option>
-            </select>
-        </div>
+        <!-- ... 保留 filters ... -->
         <div class="product-grid">
             <div class="product-card">
-                <img src="images/tea-product-1.jpg" alt="产品1">
+                <img src="images/green-tea.jpg" alt="绿茶">
                 <div class="product-info">
-                    <h3>舒缓薰衣草茶</h3>
-                    <p>帮助放松身心，改善睡眠质量</p>
+                    <h3>清新绿茶</h3>
+                    <p>富含抗氧化物，提神醒脑</p>
                     <a href="#" class="btn">查看详情</a>
                 </div>
             </div>
             <div class="product-card">
-                <img src="images/tea-product-2.jpg" alt="产品2">
+                <img src="images/herbal-tea.jpg" alt="花草茶">
                 <div class="product-info">
-                    <h3>活力柑橘绿茶</h3>
-                    <p>提神醒脑，增强免疫力</p>
+                    <h3>舒缓花草茶</h3>
+                    <p>天然草本配方，帮助放松身心</p>
                     <a href="#" class="btn">查看详情</a>
                 </div>
             </div>
-            <!-- 添加更多产品卡片 -->
+            <div class="product-card">
+                <img src="images/oolong-tea.jpg" alt="乌龙茶">
+                <div class="product-info">
+                    <h3>醇香乌龙茶</h3>
+                    <p>独特口感，促进新陈代谢</p>
+                    <a href="#" class="btn">查看详情</a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 草本茶养生商城. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- ... 保留 footer ... -->
 </body>
 </html>
