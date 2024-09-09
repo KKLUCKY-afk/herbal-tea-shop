@@ -5,18 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>草本茶养生商城</title>
     <style>
-        /* ... 保留之前的样式 ... */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 1rem 0;
+        }
         nav ul {
             list-style-type: none;
             padding: 0;
+            text-align: center;
         }
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin: 0 15px;
         }
         nav ul li a {
+            color: #ffffff;
             text-decoration: none;
-            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .hero {
+            background-image: url('images/tea-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .history {
+            background-color: #f4f4f4;
+            padding: 2rem 0;
         }
     </style>
 </head>
@@ -31,8 +69,25 @@
         </nav>
     </header>
 
-    <!-- ... 保留主页内容 ... -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>草本茶养生商城</h1>
+            <p>探索我们的草本茶系列，开启您的健康之旅</p>
+        </div>
+    </section>
 
-    <!-- ... 保留 footer ... -->
+    <section class="history">
+        <div class="container">
+            <h2>我们的品牌故事</h2>
+            <p>草本茶养生商城始于2010年，由一群热爱自然、追求健康的茶叶爱好者创立。我们的创始人在喜马拉雅山脉的一次徒步旅行中，偶然发现了当地居民世代相传的草本茶配方。</p>
+            <p>受到启发，我们决心将这份自然的馈赠带回现代都市，让更多人享受到纯净、健康的草本茶。经过多年的研究和改良，我们精心调配出一系列既保留传统精髓，又符合现代人需求的草本茶品种。</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 草本茶养生商城. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
