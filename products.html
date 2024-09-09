@@ -5,43 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>产品 - 草本茶养生商城</title>
     <style>
-        /* 复制之前的样式，并添加以下内容 */
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
+        /* 保留之前的样式 */
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
-        .product-card {
-            background-color: #fff;
-            border-radius: 5px;
-            padding: 15px;
-            text-align: center;
-        }
-        .product-card img {
-            max-width: 100%;
-            height: auto;
+        .filters select {
+            padding: 5px;
         }
     </style>
 </head>
 <body>
-    <!-- 复制 header 部分 -->
+    <!-- 保留之前的 header 部分 -->
 
     <section id="products">
         <div class="container">
             <h1>我们的产品</h1>
+            <div class="filters">
+                <select id="flavor">
+                    <option value="">口味选择</option>
+                    <option value="sweet">甜味</option>
+                    <option value="sour">酸味</option>
+                    <option value="bitter">苦味</option>
+                    <option value="spicy">辛辣</option>
+                </select>
+                <select id="function">
+                    <option value="">功能选择</option>
+                    <option value="relax">放松减压</option>
+                    <option value="energy">提神醒脑</option>
+                    <option value="sleep">改善睡眠</option>
+                    <option value="digestion">促进消化</option>
+                </select>
+                <select id="caffeine">
+                    <option value="">是否有咖啡因</option>
+                    <option value="yes">含咖啡因</option>
+                    <option value="no">不含咖啡因</option>
+                </select>
+                <select id="type">
+                    <option value="">品种选择</option>
+                    <option value="green">绿茶</option>
+                    <option value="black">红茶</option>
+                    <option value="oolong">乌龙茶</option>
+                    <option value="herbal">花草茶</option>
+                </select>
+                <select id="origin">
+                    <option value="">产地选择</option>
+                    <option value="china">中国</option>
+                    <option value="india">印度</option>
+                    <option value="srilanka">斯里兰卡</option>
+                    <option value="japan">日本</option>
+                </select>
+            </div>
             <div class="product-grid">
-                <div class="product-card">
-                    <img src="path_to_image.jpg" alt="产品名称">
-                    <h3>产品名称</h3>
-                    <p>简短描述</p>
-                    <button>查看详情</button>
-                </div>
-                <!-- 添加更多产品卡片 -->
+                <!-- 保留之前的产品卡片 -->
             </div>
         </div>
     </section>
 
-    <!-- 复制 footer 部分 -->
+    <!-- 保留之前的 footer 部分 -->
 </body>
 </html>
