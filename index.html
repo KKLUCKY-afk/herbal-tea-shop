@@ -5,34 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>草本茶养生商城</title>
     <style>
-        /* 保留之前的样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: rgba(53, 66, 74, 0.7);
+            color: #ffffff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('images/tea-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
         .history {
             background-color: #f4f4f4;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
+            padding: 2rem 0;
+        }
+        .history-content {
+            display: flex;
+            align-items: center;
+        }
+        .history-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        .history-image {
+            flex: 1;
+        }
+        .history-image img {
+            width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <!-- 保留之前的 header 部分 -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="products.html">产品</a></li>
+                <li><a href="tea-academy.html">茶研院</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="showcase">
-        <div class="container">
-            <h1>优质草本茶，健康生活方式</h1>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>草本茶养生商城</h1>
             <p>探索我们的草本茶系列，开启您的健康之旅</p>
         </div>
     </section>
 
-    <section id="history" class="history">
+    <section class="history">
         <div class="container">
-            <h2>我们的品牌故事</h2>
-            <p>草本茶养生商城始于2010年，由一群热爱自然、追求健康的茶叶爱好者创立。我们的创始人在喜马拉雅山脉的一次徒步旅行中，偶然发现了当地居民世代相传的草本茶配方。这些天然草本茶不仅口感独特，更蕴含着丰富的养生智慧。</p>
-            <p>受到启发，我们决心将这份自然的馈赠带回现代都市，让更多人享受到纯净、健康的草本茶。经过多年的研究和改良，我们精心调配出一系列既保留传统精髓，又符合现代人需求的草本茶品种。</p>
-            <p>十余年来，我们始终坚持选用最优质的原料，采用传统工艺与现代科技相结合的方式，为消费者提供最纯正、最健康的草本茶体验。我们相信，每一杯茶都是一次与自然的对话，是一份对健康生活的承诺。</p>
+            <div class="history-content">
+                <div class="history-text">
+                    <h2>我们的品牌故事</h2>
+                    <p>草本茶养生商城始于2010年，由一群热爱自然、追求健康的茶叶爱好者创立。我们的创始人在喜马拉雅山脉的一次徒步旅行中，偶然发现了当地居民世代相传的草本茶配方。</p>
+                    <p>受到启发，我们决心将这份自然的馈赠带回现代都市，让更多人享受到纯净、健康的草本茶。经过多年的研究和改良，我们精心调配出一系列既保留传统精髓，又符合现代人需求的草本茶品种。</p>
+                </div>
+                <div class="history-image">
+                    <img src="images/tea-history.jpg" alt="我们的历史">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- 保留之前的 featured-products 和 footer 部分 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 草本茶养生商城. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
