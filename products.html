@@ -6,46 +6,80 @@
     <title>产品 - 草本茶养生商城</title>
     <style>
         /* ... 保留之前的样式 ... */
-        .product-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            background-color: #f0f0f0; /* 添加背景色作为占位符 */
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .filters select {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <!-- ... 保留 header ... -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">返回主页</a></li>
+                <li><a href="products.html">产品</a></li>
+                <li><a href="tea-academy.html">茶研院</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container">
         <h1>我们的产品</h1>
-        <!-- ... 保留 filters ... -->
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="images/green-tea.jpg" alt="绿茶">
-                <div class="product-info">
-                    <h3>清新绿茶</h3>
-                    <p>富含抗氧化物，提神醒脑</p>
-                    <a href="#" class="btn">查看详情</a>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/herbal-tea.jpg" alt="花草茶">
-                <div class="product-info">
-                    <h3>舒缓花草茶</h3>
-                    <p>天然草本配方，帮助放松身心</p>
-                    <a href="#" class="btn">查看详情</a>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/oolong-tea.jpg" alt="乌龙茶">
-                <div class="product-info">
-                    <h3>醇香乌龙茶</h3>
-                    <p>独特口感，促进新陈代谢</p>
-                    <a href="#" class="btn">查看详情</a>
-                </div>
-            </div>
+        <div class="filters">
+            <select id="flavor">
+                <option value="">口味选择</option>
+                <option value="sweet">甜味</option>
+                <option value="sour">酸味</option>
+                <option value="bitter">苦味</option>
+                <option value="spicy">辛辣</option>
+            </select>
+            <select id="function">
+                <option value="">功能选择</option>
+                <option value="relax">放松减压</option>
+                <option value="energy">提神醒脑</option>
+                <option value="sleep">改善睡眠</option>
+                <option value="digestion">促进消化</option>
+            </select>
+            <select id="caffeine">
+                <option value="">是否有咖啡因</option>
+                <option value="yes">含咖啡因</option>
+                <option value="no">不含咖啡因</option>
+            </select>
+            <select id="type">
+                <option value="">品种选择</option>
+                <option value="green">绿茶</option>
+                <option value="black">红茶</option>
+                <option value="oolong">乌龙茶</option>
+                <option value="herbal">花草茶</option>
+            </select>
+            <select id="origin">
+                <option value="">产地选择</option>
+                <option value="china">中国</option>
+                <option value="india">印度</option>
+                <option value="srilanka">斯里兰卡</option>
+                <option value="japan">日本</option>
+            </select>
         </div>
+        <!-- ... 保留产品卡片 ... -->
     </div>
 
     <!-- ... 保留 footer ... -->
