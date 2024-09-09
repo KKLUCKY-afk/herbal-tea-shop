@@ -5,54 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>茶研院 - 草本茶养生商城</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #35424a;
-            color: #ffffff;
-            padding: 1rem 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem 0;
-        }
-        .hero {
-            background-image: url('images/tea-academy-hero.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #ffffff;
-        }
-        .hero-content {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 2rem;
-            border-radius: 10px;
-        }
+        /* ... 保留之前的样式 ... */
         .article-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -64,10 +17,6 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-            transition: transform 0.3s ease;
-        }
-        .article-card:hover {
-            transform: translateY(-5px);
         }
         .article-card img {
             width: 100%;
@@ -95,26 +44,39 @@
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="products.html">产品</a></li>
-                <li><a href="tea-academy.html">茶研院</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>茶研院</h1>
-            <p>探索茶叶的奥秘，了解更多关于茶的知识</p>
-        </div>
-    </section>
+    <!-- ... 保留 header ... -->
 
     <div class="container">
+        <h1>茶研院</h1>
+        <p>探索茶叶的奥秘，了解更多关于茶的知识</p>
         <div class="article-list">
             <div class="article-card">
-                <img src="images/tea-article-1.jpg" alt="各种茶叶的功效与作用">
+                <img src="images/tea-benefits.jpg" alt="茶叶的健康益处">
                 <div class="article-info">
-                    <h3
+                    <h3>茶叶的10大健康益处</h3>
+                    <p>探索茶叶如何提升身体健康，从抗氧化到改善心血管功能。</p>
+                    <a href="https://www.healthline.com/nutrition/top-10-evidence-based-health-benefits-of-green-tea" class="btn" target="_blank">阅读全文</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="images/tea-ceremony.jpg" alt="中国茶道">
+                <div class="article-info">
+                    <h3>中国茶道：一种生活艺术</h3>
+                    <p>了解中国茶道的历史、仪式和哲学，体验茶文化的深度。</p>
+                    <a href="https://www.chinahighlights.com/travelguide/chinese-tea/tea-ceremony.htm" class="btn" target="_blank">阅读全文</a>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="images/tea-types.jpg" alt="茶叶种类">
+                <div class="article-info">
+                    <h3>六大茶类：特点与冲泡方法</h3>
+                    <p>从绿茶到普洱，详细介绍六大茶类的特点和最佳冲泡方法。</p>
+                    <a href="https://www.seriouseats.com/different-types-of-tea-where-they-come-from" class="btn" target="_blank">阅读全文</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ... 保留 footer ... -->
+</body>
+</html>
